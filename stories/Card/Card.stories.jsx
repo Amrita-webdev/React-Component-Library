@@ -9,11 +9,11 @@ export default {
 export const Default = () => <Card />
 
 export const Colors = () => 
-    options.colors.map((index, color) => {
+    options.colors.map((color, index) => {
         return <Card key={index} color={color} />
     })
 
     export const Sizes = () => 
-        options.sizes.map((index, size) => {
+        options.sizes.map((size, index) => {
             return <Card key={index} size={size} />
         })
