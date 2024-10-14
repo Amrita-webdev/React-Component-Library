@@ -15,5 +15,23 @@ const config = {
     name: "@storybook/react-vite",
     options: {},
   },
+  viteFinal: (config) => {
+    config.resolve = {
+      ...config.resolve,
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    };
+    
+    config.optimizeDeps = {
+      ...config.optimizeDeps,
+      esbuildOptions: {
+        loader: {
+          '.js': 'jsx',
+        },
+      },
+    };
+
+    return config;
+  },
 };
+
 export default config;

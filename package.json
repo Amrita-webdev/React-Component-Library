@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@storybook/builder-vite": "^8.3.5",
+    "@vitejs/plugin-react": "^4.3.2",
+    "minireset.css": "^0.0.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
